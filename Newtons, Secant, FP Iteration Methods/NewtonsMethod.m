@@ -39,6 +39,9 @@ dxf = diff(f);
 % 3 is our first guest.
 xCur = 3;
 
+% Start the timer
+tic;
+
 for i = 1:maxIterations
 % Calculate the next guess with newton's formula
 xNext = xCur - ( double(f(xCur)) / double(dxf(xCur)) );
@@ -62,6 +65,10 @@ xCur = xNext;
 
 end
 
+%Stop the timer.
+toc;
+
+% Assign result
 result = xNext;
 
 end

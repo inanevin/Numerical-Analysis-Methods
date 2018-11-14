@@ -1,0 +1,20 @@
+- For the given function in Assignment 2, the algorithms' time complexity is: O(n) linear time.
+- The bigger the max iteration, time increases.
+- The smaller the tolerance, time increases.
+
+If we are to compare the 3 algorithms for the given function with the respective values of:
+
+Tolerance : 0.001
+MaxIterations : 100
+
+With the hardware spec of:
+
+Locked 60 FPS for Matlab Editor R2015a on 8 core processor with 4.97 Ghz:
+
+Newtons Method: ~0.0510 - ~0.0592 seconds.
+Secant Method: ~0.0683 - ~0.0736 seconds.
+Fixed Point Iteration: ~0.3568 - ~0.3852 seconds.
+
+It was observed that when tolerance was lowered around 0.00001 the newton's method time did not
+change drastically meanwhile secant and fixed point iteration increased significantly.
+(E.g Secant was ~0.1010 with 0.00001 tolerance)
