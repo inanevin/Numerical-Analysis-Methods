@@ -46,7 +46,7 @@ xNext = double(g(xCur));
         return;
     end
     
-% fVal is the value of the function with our latest guest.
+% fVal is the value of the function with our latest guess.
 fVal = double(f(xNext));
 
 fprintf('Function value with respect to x%d is: %.5f \n', (i+1), fVal);

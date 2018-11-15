@@ -39,7 +39,7 @@ xNext = xCur - (double(f(xCur)) * (xCur-xPrev)) / (double(f(xCur)) - double(f(xP
 
 fprintf('x%d is %.5f -- x%d is %.5f\n', i,xCur, (i+1), xNext);
 
-% fVal is the value of the function with our latest guest.
+% fVal is the value of the function with our latest guess.
 fVal = double(f(xNext));
 
 fprintf('Function value with respect to x%d is: %.5f \n', (i+1), fVal);
