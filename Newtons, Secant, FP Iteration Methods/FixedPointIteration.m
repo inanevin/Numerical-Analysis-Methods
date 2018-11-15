@@ -20,7 +20,8 @@ function [ result ] = FixedPointIteration( tolerance, maxIterations )
 syms f(x)
 f(x) = 5 - 3.2 * (x-sin(x));
 
-% Leave x out and declare gx.
+% Leave x out and declare gx. Since we pratically have only one way to do it with the
+% given function.
 syms g(x)
 g(x) = (5 / 3.2) + sin(x); 
 
@@ -39,9 +40,9 @@ for i = 1:maxIterations
 % Calculate next guess using FixedPointIteration Method
 xNext = double(g(xCur));
 
-% Check if the function converges.
+% Check if the function diverges, if so return.
     if abs(double(dxg(xCur))) >= 1
-        fprintf('Function does not converge with this estimate root, aborting...\n')
+        fprintf('Function does not converge with this guess, aborting...\n')
         return;
     end
     
