@@ -18,3 +18,7 @@ Fixed Point Iteration: ~0.3568 - ~0.3852 seconds.
 It was observed that when tolerance was lowered around 0.00001 the newton's method time did not
 change drastically meanwhile secant and fixed point iteration increased significantly.
 (E.g Secant was ~0.1010 with 0.00001 tolerance)
+
+So the time required to calculate the solution for this particular example is:
+
+Newtons < Secant < Fixed Point Iteration
