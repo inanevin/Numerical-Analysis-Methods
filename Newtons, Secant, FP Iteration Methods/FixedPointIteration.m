@@ -1,5 +1,5 @@
 %
-% Netwon's method to find approximate solution for a given function.
+% Fixed Point Iteration method to find approximate solution for a given function.
 %
 % Author: Inan Evin
 % Timestamp: 15.11.2018
